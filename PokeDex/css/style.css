@@ -1,0 +1,15 @@
+@media all and (max-width: 768px){
+    .fotolideres{
+        width: 85%;
+        align-items: end;
+    }
+}
+@media all and (max-width: 576px){
+    .fotolideres{
+        width: 107%;
+    }
+} @media all and (min-width: 768px){
+    .fotolideres{
+        width: 100%;
+    }
+}
