@@ -15,13 +15,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-color: white;
+
   background-color: black;
 
 }
 
 main {
-  color: white;
   text-align: center;
   font-size: large;
   flex-grow: 1;
@@ -153,7 +152,6 @@ main {
   background-color: green;}
 
 
-  
   .pokemon-card img {
     height: 200px;
     object-fit: cover;
@@ -162,3 +160,55 @@ main {
     width: 100%;
     position: relative;
   }
+
+
+
+  .mbtncarousel1{
+    position: relative;
+    left: 30px;
+}
+.mbtncarousel2{
+    position: relative;
+    right: 50px;
+}
+.btndragon{
+    background-color: rgb(176, 104, 243);
+}
+.btnfantasma{
+    background-color: rgba(114, 37, 187, 0.884);
+}
+
+
+/* MediaQueries */
+@media all and (max-width: 768px){
+    .fotolideres{
+        width: 85%;
+        align-items: end;
+    }
+    .fotogimnasio{
+        width: 101%;
+    }
+    .mbtncarousel1{
+        position: relative;
+        left: 10px;
+    }
+    .mbtncarousel2{
+        position: relative;
+        right: 30px;
+    }
+}
+@media all and (max-width: 576px){
+    .fotolideres{
+        width: 107%;
+    }
+    .fotogimnasio{
+        width: 101%;
+    }
+} @media all and (min-width: 768px){
+    .fotolideres{
+        width: 100%;
+    }
+    .fotogimnasio{
+        width: 101%;
+    }
+}
