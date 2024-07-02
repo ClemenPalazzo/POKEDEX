@@ -38,141 +38,98 @@
     />
     <link rel="stylesheet" href="./css/styleindex.css" />
     <title>POKEDEX</title>
-    <style>
-      .pokemon-card img {
-        height: 200px;
-        object-fit: cover;
-      }
-      footer {
-        width: 100%;
-        position: relative;
-      }
-    </style>
   </head>
   <body>
     <header id="arriba">
       <nav
-        class="navbar navbar-expand-lg bg-red d-lg-none d-md-none d-sm-block"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">POKEDEX</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Dropdown</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 serchbar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+      class="navbar navbar-expand-lg bg-red d-lg-none d-md-none d-sm-block"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">POKEDEX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 serchbar "
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </nav>
-      <nav
-        class="navbar navbar-expand-lg bg-red navbar-custom d-none d-md-block d-lg-block"
+      </div>
+    </nav>
+    <nav
+    class="navbar navbar-expand-lg bg-red navbar-custom d-none d-md-block d-lg-block"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand bg-blue-button" href="./index.html">POKEDEX</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <div class="container-fluid">
-          <a class="navbar-brand bg-blue-button" href="index.html">POKEDEX</a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item bg-red-button btn p-2">
+            <a class="nav-link" aria-current="page" href="./index.html"
+              ><i class="bi bi-house fs-3 text-light"></i>
+            </a>
+          </li>
+          <li class="nav-item btn bg-green-button mx-2">
+            <a class="nav-link active" href="./pages/sobrenosotros.html"
+              ><i class="bi bi-person-bounding-box fs-3 text-light"></i>
+            </a>
+          </li>
+          <li class="nav-item btn bg-yellow-button mx-2">
+            <a class="nav-link" href="./pages/error404.html"
+              ><i class="bi bi-list fs-3 fw-bold text-light"></i>
+            </a>
+        </ul>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2 text-dark serchbar"
+            type="search"
+            placeholder="busca tu pokemon"
+            aria-label="Search"
+          />
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            class="btn btn-outline-danger border border-2 border-dark"
+            type="submit"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-search"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item bg-red-button btn p-2">
-                <a class="nav-link active" aria-current="page" href="#"
-                  ><i class="bi bi-house fs-3 text-light"></i
-                ></a>
-              </li>
-              <li class="nav-item btn bg-green-button mx-2">
-                <a class="nav-link" href="#"
-                  ><i class="bi bi-person-bounding-box fs-3 text-light"></i
-                ></a>
-              </li>
-              <li
-                class="nav-item dropdown btn bg-yellow-button rounded-circle mx-2"
-              >
-                <a
-                  class="nav-link dropdown-toggle"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  ><i class="bi bi-list fs-3 fw-bold text-light"></i
-                ></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">TIPO TIERRA</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">GIMNACIOS</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 text-dark"
-                type="search"
-                placeholder="busca tu pokemon"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-danger border border-2 border-dark"
-                type="submit"
-              >
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+        </form>
+      </div>
+    </div>
+  </nav>
     </header>
     <main>
       <section class="container my-5">

@@ -15,7 +15,7 @@
       name="author"
       content="Matias Delgado, Clemencia Palazzo Lobo, Valentina Palazzo Lobo, Santiago Rodriguez"
     />
-    <!-- completar etiquets meta -->
+
     <link
       rel="shortcut icon"
       href="./img/sobrenosotros/logo-pokemon.jpg"
@@ -46,7 +46,7 @@
         class="navbar navbar-expand-lg bg-red d-lg-none d-md-none d-sm-block"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">POKEDEX</a>
+          <a class="navbar-brand" href="../index.html">POKEDEX</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -61,37 +61,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
                 >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="./sobrenosotros.html"
+                  >Sobre Nosotros</a
+                >
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="form-control me-2 serchbar"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -107,7 +89,9 @@
         class="navbar navbar-expand-lg bg-red navbar-custom d-none d-md-block d-lg-block"
       >
         <div class="container-fluid">
-          <a class="navbar-brand bg-blue-button" href="index.html">POKEDEX</a>
+          <a class="navbar-brand bg-blue-button" href="../index.html"
+            >POKEDEX</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -122,43 +106,34 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item bg-red-button btn p-2">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
                   ><i class="bi bi-house fs-3 text-light"></i>
                 </a>
               </li>
               <li class="nav-item btn bg-green-button mx-2">
-                <a class="nav-link" href="#"
+                <a class="nav-link" href="../pages/sobrenosotros.html"
                   ><i class="bi bi-person-bounding-box fs-3 text-light"></i>
                 </a>
               </li>
-              <li
-                class="nav-item dropdown btn bg-yellow-button rounded-circle mx-2"
-              >
-                <a
-                  class="nav-link dropdown-toggle"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+              <li class="nav-item btn bg-yellow-button mx-2">
+                <a class="nav-link" href="../pages/error404.html"
                   ><i class="bi bi-list fs-3 fw-bold text-light"></i>
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">TIPO TIERRA</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">GIMNACIOS</a>
-                  </li>
-                </ul>
               </li>
             </ul>
+
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2 text-dark"
+                class="form-control me-2 text-dark serchbar"
                 type="search"
                 placeholder="busca tu pokemon"
                 aria-label="Search"
               />
               <button
-                class="btn btn-danger border border-2 border-dark"
+                class="btn btn-outline-danger border border-2 border-dark"
                 type="submit"
               >
                 <i class="bi bi-search"></i>
@@ -171,104 +146,119 @@
 
     <main>
       <div class="container mt-5">
-        <div class="pokemon-card card">
-          <div class="pokemon-header card-header text-center text-uppercase bg-info text-dark">
+        <div class="pokemon-card card text-bg-dark text-light ">
+          <div
+            class="pokemon-header card-header text-uppercase bg-primary bg-opacity-10"
+          >
             #007 Squirtle
           </div>
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
               <img
-                src="path-to-your-image.png"
+                src="../imgindex/squirtle.jpg"
                 alt="Squirtle"
-                class="pokemon-img card-img-top border-bottom border-info"
+                class="pokemon-img card-img-top w-100 h-100"
               />
             </div>
-            <div class="col-md-8 card-body">
-              <h3>Descripción</h3>
-              <p>
-                Squirtle es un Pokémon tipo agua con una concha que actúa como su protección natural. Puede lanzar chorros de agua con gran precisión y fuerza para defenderse de los enemigos.
+            <div class="col-md-8 card-body ">
+              <h3 class="fw-bold text-light ">Descripción</h3>
+              <p class="fw-bold text-light ">
+                Squirtle es un Pokémon tipo agua con una concha que actúa como
+                su protección natural. Puede lanzar chorros de agua con gran
+                precisión y fuerza para defenderse de los enemigos.
               </p>
-              <h3>Curiosidades</h3>
-              <p>
-                Squirtle es conocido por su naturaleza amigable y juguetona. Se le puede encontrar jugando en ríos y lagos, donde disfruta nadando y practicando con sus habilidades acuáticas.
+              <h3 class="fw-bold text-light ">Curiosidades</h3>
+              <p class="fw-bold text-light ">
+                Squirtle es conocido por su naturaleza amigable y juguetona. Se
+                le puede encontrar jugando en ríos y lagos, donde disfruta
+                nadando y practicando con sus habilidades acuáticas.
               </p>
-              <p>
-                <b>Tipo:</b>
-                <b class="badge type-water">Agua</b>
-              </p>
-              <p>
-                <b>Versiones:</b>
-                <b class="badge bg-primary">♂</b>
-                <b class="badge bg-danger">♀</b>
+              <p class="fw-bold text-light ">
+                <b class="text-light fw-bold">Tipo:</b>
+                <b class="badge type-water text-light fw-bold">Agua</b>
               </p>
             </div>
           </div>
           <div class="col-12">
-            <h3>Apariencia</h3>
-            <ul>
-              <li><b>Color:</b> Azul claro.</li>
-              <li><b>Rasgos distintivos:</b> Concha en la espalda.</li>
-              <li><b>Cola:</b> Corta y esponjosa.</li>
-              <li><b>Forma:</b> Pequeño y ágil.</li>
+            <h3 class="text-light fw-bold">Apariencia</h3>
+            <ul class="list-unstyled">
+              <li><p  class="text-light fw-bold">Color: Azul claro.</li></p>
+              <li><p  class="text-light fw-bold">Rasgos distintivos: Concha en la espalda.</li>
+              <li><p  class="text-light fw-bold">Cola: Corta y esponjosa.</li>
+              <li><p  class="text-light fw-bold">Forma: Pequeño y ágil.</li>
             </ul>
           </div>
           <div class="row g-3 mt-3">
             <div class="col-md-4">
-              <div class="info-card p-3 border-start border-info">
-                <p><b>Altura:</b> 0,5 m</p>
-                <p><b>Peso:</b> 9,0 kg</p>
-                <p>
-                  <b>Sexo:</b>
-                  <b class="badge bg-secondary">♂</b>
-                  <b class="badge bg-secondary">♀</b>
+              <div class="info-card p-3 ">
+                <p class="text-light fw-bold">Altura: 0,5 m</p>
+                <p class="text-light fw-bold">Peso: 9,0 kg</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card p-3 border-start border-light">
+                <p class="text-light fw-bold">Categoría: Pokémon Tortuga</p>
+                <p class="text-light fw-bold">
+                  Habilidad: Torrente
+                   Caparazón (oculta)
                 </p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="info-card p-3 border-start border-info">
-                <p><b>Categoría:</b> Pokémon Tortuga</p>
-                <p>
-                  <b>Habilidad:</b> Torrente
-                  <b class="ability-badge">?</b> Caparazón (oculta)
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info-card p-3 border-start border-info">
-                <p><b>Tipo:</b></p>
-                <b class="badge type-water">Agua</b>
+              <div class="info-card p-3 border-start border-light">
+                <p class="text-light fw-bold">Tipo:Agua</p>         
               </div>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-md-12">
-              <div class="habitat-info p-3 border-top border-info">
-                <h5>Hábitat</h5>
-                <p>Squirtle vive en áreas cercanas al agua, como playas, lagos y ríos. Prefiere entornos con abundante agua para poder entrenar sus habilidades acuáticas y jugar con otros Pokémon acuáticos.</p>
+              <div class=" p-3 border-top border-light ">
+                <h5 class="fw-bold text-light">Hábitat</h5>
+                <p class="fw-bold text-light">
+                  Squirtle vive en áreas cercanas al agua, como playas, lagos y
+                  ríos. Prefiere entornos con abundante agua para poder entrenar
+                  sus habilidades acuáticas y jugar con otros Pokémon acuáticos.
+                </p>
               </div>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-md-12">
-              <div class="base-stats p-3 border-top border-info">
-                <h5>Estadísticas Base:</h5>
+              <div class="base-stats p-3 border-top border-light">
+                <h5 class="fw-bold text-light">Estadísticas Base:</h5>
                 <div class="progress mb-2">
-                  <div class="progress-bar bg-danger stat-bar-inner stat-hp" role="progressbar" style="width: 95%">
+                  <div
+                    class="progress-bar bg-danger stat-bar-inner stat-hp"
+                    role="progressbar"
+                    style="width: 95%"
+                  >
                     PS: 95
                   </div>
                 </div>
                 <div class="progress mb-2">
-                  <div class="progress-bar bg-warning stat-bar-inner stat-attack" role="progressbar" style="width: 48%">
+                  <div
+                    class="progress-bar bg-warning stat-bar-inner stat-attack"
+                    role="progressbar"
+                    style="width: 48%"
+                  >
                     Ataque: 48
                   </div>
                 </div>
                 <div class="progress mb-2">
-                  <div class="progress-bar bg-success stat-bar-inner stat-defense" role="progressbar" style="width: 65%">
+                  <div
+                    class="progress-bar bg-success stat-bar-inner stat-defense"
+                    role="progressbar"
+                    style="width: 65%"
+                  >
                     Defensa: 65
                   </div>
                 </div>
                 <div class="progress mb-2">
-                  <div class="progress-bar bg-info stat-bar-inner stat-speed" role="progressbar" style="width: 43%">
+                  <div
+                    class="progress-bar bg-info stat-bar-inner stat-speed"
+                    role="progressbar"
+                    style="width: 43%"
+                  >
                     Velocidad: 43
                   </div>
                 </div>
