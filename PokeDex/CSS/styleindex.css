@@ -1,13 +1,23 @@
 * {
   font-family: "Bungee Hairline", sans-serif;
+
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: large;
+  
+
   color: black;
   font-weight: bold;
   font-size: large;
+
 }
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  background-color: black;
+
 }
 
 main {
@@ -131,5 +141,14 @@ main {
 .btn-warning {
   border: 4px outset #d5b6b6;
   border-radius: 10px;
-  background-color: green;
+
+  background-color: green;
 }
+
+.pokemon-card img {
+  height: 200px;
+  object-fit: cover;
+
+  background-color: green;}
+
+
