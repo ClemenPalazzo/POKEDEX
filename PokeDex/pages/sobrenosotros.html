@@ -21,9 +21,138 @@
     />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleindex.css" />
     <title>Sobre nosotros</title>
   </head>
   <body>
+
+
+    <header id="arriba">
+      <nav
+        class="navbar navbar-expand-lg bg-red d-lg-none d-md-none d-sm-block"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">POKEDEX</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 serchbar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="navbar navbar-expand-lg bg-red navbar-custom d-none d-md-block d-lg-block"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand bg-blue-button" href="index.html">POKEDEX</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item bg-red-button btn p-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="bi bi-house fs-3 text-light"></i
+                ></a>
+              </li>
+              <li class="nav-item btn bg-green-button mx-2">
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-person-bounding-box fs-3 text-light"></i
+                ></a>
+              </li>
+              <li
+                class="nav-item dropdown btn bg-yellow-button rounded-circle mx-2"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="bi bi-list fs-3 fw-bold text-light"></i
+                ></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">TIPO TIERRA</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">GIMNACIOS</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 text-dark"
+                type="search"
+                placeholder="busca tu pokemon"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-danger border border-2 border-dark"
+                type="submit"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
     <header></header>
     <main>
       <section class="container">
@@ -36,17 +165,17 @@
           especializa en un tipo específico de Pokémon, ofreciendo desafíos
           únicos y emocionantes. ¡Conócelos y prepárate para la batalla!
         </p>
-        <article class="container-fluid mb-5">
+        <article class="container-fluid mb-5 bg">
           <div id="carouselGimnasios" class="carousel slide">
             <div class="carousel-inner row">
               <div class="carousel-item active col-12">
-                <div class="cards-wrapper">
+                <div class="cards-wrapper ">
                   <div
                     class="row row-cols-1 row-cols-md-3 g-4 justify-content-evenly"
                   >
                     <!-- Primer lider -->
                     <div class="col-12 col-md-6 col-lg-5">
-                      <div class="card h-100">
+                      <div class="card h-100 ">
                         <img
                           src="../img/sobrenosotros/EP014_Gimnasio_Pok3Fn.webp"
                           class="card-img-top"
@@ -540,4 +669,84 @@
     <footer></footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
+  <footer class="bg-red mt-4 container-fluid">
+    <div class="row no-gutters">
+      <div class="col-12 col-md-6 col-lg-3 p-3 fw-bolder fs-5">
+        <img
+          class="boton-footer w-100"
+          src="../img/sobrenosotros/Pokémon-Com-Fundo-Transparente.png"
+          alt="logo de pokemon"
+        />
+      </div>
+      <div
+        class="col-12 col-md-6 col-lg-3 p-3 footer-text d-flex justify-content-center align-items-center"
+      >
+        <div class="row">
+          <div class="col-6 text-center mb-3">
+            <a
+              href="./PAGES/error404.html"
+              class="btn btn-warning w-75 text-dark fw-bolder"
+              >GIMNACIOS</a
+            >
+          </div>
+          <div class="col-6 text-center mb-3">
+            <a
+              href="./PAGES/error404.html"
+              class="btn btn-warning w-75 text-dark fw-bolder"
+              >ITEMS</a
+            >
+          </div>
+          <div class="col-6 text-center my-3">
+            <a
+              href="./PAGES/error404.html"
+              class="btn btn-warning w-75 text-dark fw-bolder"
+              >HOSPITALES</a
+            >
+          </div>
+          <div class="col-6 text-center my-3">
+            <a
+              href="./PAGES/error404.html"
+              class="btn btn-warning w-75 text-dark fw-bolder"
+              >POKEMONS</a
+            >
+          </div>
+          <div class="col-6 text-center my-3">
+            <a
+              href="./PAGES/error404.html"
+              class="btn btn-warning w-75 text-dark fw-bolder"
+              >POKESHOP</a
+            >
+          </div>
+          <div class="col-6 text-center my-3">
+            <a
+              href="./PAGES/error404.html"
+              class="btn btn-warning w-75 text-dark fw-bolder"
+              >EMERGENCIA</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-12 col-md-6 col-lg-3 p-3 footer-text d-flex justify-content-center"
+      >
+        <div class="imagen-footer-pantalla w-100 h-75 mt-5">
+          <p class="texto-sobre-imagen-footer">
+            © 2024 Pokédex Online. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 p-3 text-center">
+        <img
+          src="../img/sobrenosotros/boton-footer.png"
+          class="boton-footer w-100"
+          alt="botón de joystick"
+        />
+      </div>
+    </div>
+  </footer>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"
+></script>
 </html>

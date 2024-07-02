@@ -15,12 +15,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
+color: white;
   background-color: black;
 
 }
 
 main {
+  color: white;
   text-align: center;
   font-size: large;
   flex-grow: 1;
@@ -152,3 +153,12 @@ main {
   background-color: green;}
 
 
+  
+  .pokemon-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  footer {
+    width: 100%;
+    position: relative;
+  }
