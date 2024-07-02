@@ -1,16 +1,15 @@
-*{font-family: 'Bungee Hairline', sans-serif;
-  color: black;
+* {
+  font-family: "Bungee Hairline", sans-serif;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: large;
-  }
-body {
-  background-color: #76acd260;
+  
 }
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
- 
+  background-color: black;
 }
 
 main {
@@ -18,25 +17,42 @@ main {
   font-size: large;
   flex-grow: 1;
 }
-.main{background: rgba(255, 255, 255, 0.2);
-     backdrop-filter: 0.5px;}
+
+.main {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: 0.5px;
+}
 
 .navbar-custom {
   height: 20vh;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 80% 70%, 75% 100%, 0% 100%);
 }
 
+.serchbar {
+  border: 4px groove #d5b6b6;
+  background-color: #0000007e;
+}
+
+.serchbar::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
 .bg-red {
-  background: linear-gradient(45deg, #c13634, #c1493b);
+  background: linear-gradient(#ff0000, #5f0404);
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
 
-.bg-red-button, .bg-green-button, .bg-yellow-button, .bg-blue-button {
+.bg-red-button,
+.bg-green-button,
+.bg-yellow-button,
+.bg-blue-button {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: inset 0 0 5px rgba(49, 48, 48, 0.718), inset 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 5px rgba(49, 48, 48, 0.718),
+    inset 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,41 +60,83 @@ main {
 }
 
 .bg-red-button {
-  background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 0.5) 70%, rgba(255, 0, 0, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 0.5) 70%,
+    rgba(255, 0, 0, 0) 100%
+  );
+  border: 4px groove #d5b6b6;
 }
 
 .bg-green-button {
-  background: radial-gradient(circle, rgba(0, 128, 0, 1) 0%, rgba(0, 128, 0, 0.5) 70%, rgba(0, 128, 0, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 128, 0, 1) 0%,
+    rgba(0, 128, 0, 0.5) 70%,
+    rgba(0, 128, 0, 0) 100%
+  );
+  border: 4px groove #d5b6b6;
 }
 
 .bg-yellow-button {
-  background: radial-gradient(circle, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 0, 0.5) 70%, rgba(255, 255, 0, 0) 100%);
-  border: 5px solid #ccc;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(255, 255, 0, 0.5) 70%,
+    rgba(255, 255, 0, 0) 100%
+  );
+  border: 4px groove #d5b6b6;
 }
 .bg-serch-button {
-  background: radial-gradient(circle, rgba(255, 255, 0, 1) 0%, rgba(255, 255, 0, 0.5) 70%, rgba(255, 255, 0, 0) 100%);
-  border: 5px solid #ccc;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(255, 255, 0, 0.5) 70%,
+    rgba(255, 255, 0, 0) 100%
+  );
+  border: 4px groove #d5b6b6;
 }
 
 .bg-blue-button {
   border-radius: 100%;
-  border: 5px solid #ccc;
-  background: radial-gradient(circle, rgba(0, 0, 255, 1) 0%, rgba(0, 0, 255, 0.5) 70%, rgba(0, 0, 255, 0) 100%);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+  border: 4px groove #d5b6b6;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 255, 1) 0%,
+    rgba(0, 0, 255, 0.5) 70%,
+    rgba(0, 0, 255, 0) 100%
+  );
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
   color: white;
   font-weight: bold;
   padding: 3.5%;
 }
-.boton-footer{transform: scale(0.6);}
+.boton-footer {
+  transform: scale(0.6);
+}
 
+.imagen-footer-pantalla {
+  border: 6px groove #d5b6b6;
+  background-color: #0000007e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.imagen-footer-pantalla { background: url('../img/sobrenosotros/pantalla-footer.png') no-repeat;
+.texto-sobre-imagen-footer {
+  padding: 10% 5%;
+}
 
-  background-size: cover;
+.btn-warning {
+  border: 4px outset #d5b6b6;
+  border-radius: 10px;
+  background-color: green;
+}
 
- background-position: center;
-;}
+.pokemon-card img {
+  height: 200px;
+  object-fit: cover;}
 
-
-
-.texto-sobre-imagen-footer { padding: 10% 5%;}
